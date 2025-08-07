@@ -130,13 +130,13 @@ if (process.env.NODE_ENV !== 'test') {
       await connectDB();
       
       app.listen(PORT, () => {
-        console.log(`🚀 Complaint Management API server running on port ${PORT}`);
-        console.log(`📚 API Documentation: http://localhost:${PORT}/api`);
-        console.log(`💚 Health Check: http://localhost:${PORT}/api/health`);
-        console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
+        console.log(` Complaint Management API server running on port ${PORT}`);
+        console.log(` API Documentation: http://localhost:${PORT}/api`);
+        console.log(` Health Check: http://localhost:${PORT}/api/health`);
+        console.log(` Environment: ${process.env.NODE_ENV || 'development'}`);
       });
     } catch (error) {
-      console.error('❌ Failed to start server:', error);
+      console.error('Failed to start server:', error);
       process.exit(1);
     }
   };
